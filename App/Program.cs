@@ -1,7 +1,7 @@
 ﻿
 List<int> numeros = new List<int> { 1, 2, 3};
 
-var lista = numeros.Select(x => x + 1);
+var lista = numeros.Select(x => x + 1).ToList();
 
-foreach (var i in lista)
-    Console.WriteLine(i);
+Console.WriteLine(lista[1]);
+
